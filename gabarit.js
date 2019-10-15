@@ -78,30 +78,24 @@ class Vecteur {
 constructor(x,y){
 	this.x=x;
 	this.y=y;
-}
+};
    module() {
 	return Math.sqrt((this.x*this.x)+(this.y*this.y));
 }
- egale(v){
+   egale(v){
     
     return (this.x==v.x && this.y==v.y);
 }
 
-}
+};
 
 
 
-let v1=new vect(2,4);
-let v2=new vect(3,4);
+let v1=new Vecteur(2,4);
+let v2=new Vecteur(3,4);
 console.log(v1.module());
 console.log(v2.module());
 console.log(v1.egale(v2));
-
-
-
-
-
-
 
 
 
